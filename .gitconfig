@@ -1,0 +1,11 @@
+[user]
+	email = procta06@gmail.com
+	name = Andrew Proctor
+[push]
+	default = simple
+[ui]
+	color = true
+[color]
+	ui = true
+[merge]
+	ff = false

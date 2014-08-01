@@ -1,0 +1,43 @@
+# vim
+alias vi='vim'
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+#Git alias's
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit '
+alias gco='git checkout '
+alias gd='git diff '
+alias gk='gitk --all&'
+alias gm='git merge '
+alias gx='gitx --all'
+alias gr='git reset '
+
+#cd Variations
+alias ..="cd .."
+alias ..2="cd ../.."
+alias ..3="cd ../../.."
+alias ..4="cd ../../../.."
+alias ..5="cd ../../../../.."
+
+#staffingnation vpn
+alias vpn_qa='sudo openvpn ~/openvpn/qa.ovpn'
+alias vpn_prod='sudo openvpn ~/openvpn/prod.ovpn'
+
+#staffingnation environments
+alias dev='ssh -p 41914 snadmin@ec2beds'
+alias devstage='ssh -p 41914 snadmin@54.203.255.152'
+alias qastage='ssh -p 41914 snadmin@54.203.254.144'
+alias qa='ssh ec2-user@10.8.0.1'
+alias prod='ssh ec2-user@10.8.0.1'
+
+#vagrant
+alias brokerRestart="vagrant ssh -c sh /var/www/beds/scripts/brokerRestart.sh"
+
+#Load Git tab completions
+source ~/.git-completion.sh
