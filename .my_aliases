@@ -1,3 +1,6 @@
+#Copy this file to the home directory 
+#Add "source ~/.my_aliases" to .bashrc and .zshrc
+
 # vim
 alias vi='vim'
 
