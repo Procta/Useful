@@ -10,9 +10,15 @@ $ sudo apt-get install oracle-java7-installer or $ sudo apt-get install oracle-j
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 
-#Virtual Box
+#virtual Box
 #Add one of the following lines according to your distribution to your /etc/apt/sources.list:
 #deb http://download.virtualbox.org/virtualbox/debian trusty contrib
 wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install virtualbox-4.3
+
+#Configure git
+$ git config --global user.name "Andrew Proctor"
+$ git config --global user.email procta06@gmail.com
+$ git config --global core.editor vim
+$ git config --global merge.ff false
