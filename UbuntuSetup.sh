@@ -17,6 +17,9 @@ wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key a
 sudo apt-get update
 sudo apt-get install virtualbox-4.3
 
+#Get the latest Vagrant
+wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2_x86_64.deb
+
 #Configure git
 $ git config --global user.name "Andrew Proctor"
 $ git config --global user.email procta06@gmail.com
