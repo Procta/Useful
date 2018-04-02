@@ -1,49 +1,24 @@
-" An example for a vimrc file.
-"
-" Maintainer:	Andrew Proctor <Andrew@targetcw.com>
-"
+" Maintainer:  Andrew Proctor <Andrew@targetcw.com>
 
-" Use Vim settings, rather then Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-" Begin my lines - ordinary
 set autoindent
 set sw=3
 set sta
 set ts=3
 set et
-" End of my lines -ordinary
-
-" Begin of my lines -change indents
-map #1 :s/^   //
-map #2 :s/^/   /
-" End of my lines -change indents
-
-"Begin of my lines - F3 to latex current file
-"                    from command or insert
-map #3 :w:! latex % 
-map! #3 :w:! latex % i
-" End of my lines - latex
 
 set nocompatible
-set bs=2		" allow backspacing over everything in insert mode
-set ai			" always set autoindenting on
+set bs=2    " allow backspacing over everything in insert mode
+set ai         " always set autoindenting on
 if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
+  set nobackup    " do not keep a backup file, use versions instead
 else
-  set backup		" keep a backup file
+  set backup      " keep a backup file
 endif
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set incsearch		" do incremental searching
-
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-" let &guioptions = substitute(&guioptions, "t", "", "g")
-
-" Don't use Ex mode, use Q for formatting
-map Q gq
-
-" Make p in Visual mode replace the selected text with the "" register.
-vnoremap p <Esc>:let current_reg = @"<CR>gvs<C-R>=current_reg<CR><Esc>
+set history=50    " keep 50 lines of command line history
+set ruler      " show the cursor position all the time
+set incsearch     " do incremental searching
+"set number
+set cursorline
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -71,4 +46,3 @@ if has("autocmd")
     \ endif
 
 endif " has("autocmd")
-
