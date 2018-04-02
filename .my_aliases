@@ -27,11 +27,3 @@ alias ..2="cd ../.."
 alias ..3="cd ../../.."
 alias ..4="cd ../../../.."
 alias ..5="cd ../../../../.."
-
-#staffingnation vpn
-alias vpn_qa='sudo openvpn ~/openvpn/qa.ovpn'
-alias vpn_prod='sudo openvpn ~/openvpn/prod_vpn.ovpn'
-
-#staffingnation environments
-alias qa='ssh ec2-user@vpn_qa -i ~/keys/qa-final.pem'
-alias prod='ssh ec2-user@vpn_prod -i ~/keys/production.pem'
