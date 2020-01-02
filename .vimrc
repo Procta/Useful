@@ -1,4 +1,4 @@
-" Maintainer:  Andrew Proctor <Andrew@targetcw.com>
+" Maintainer:  Andrew Proctor <procta06@gmail.com>
 
 set autoindent
 set sw=3
