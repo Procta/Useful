@@ -1,4 +1,4 @@
-#Copy this file to the home directory 
+#Copy this file to the home directory
 #Add "source ~/.my_aliases" to .bashrc and .zshrc
 
 # vim
@@ -9,7 +9,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-#Git alias's
+#Git alias'
 alias gs='git status'
 alias ga='git add'
 alias gb='git branch'
@@ -27,3 +27,76 @@ alias ..2="cd ../.."
 alias ..3="cd ../../.."
 alias ..4="cd ../../../.."
 alias ..5="cd ../../../../.."
+
+#command-line copy to clipboard
+alias copy="pbcopy"
+
+#python
+alias python="python3"
+
+###############
+# Kandji Apps #
+###############
+
+###########
+# Company #
+###########
+
+# alias company="source ~/Envs/company/bin/activate; cd ~/kandji/company/kandji-backend-company-app;"
+alias company='
+   clear;
+   source ~/Envs/company/bin/activate;
+   cd ~/kandji/company/kandji-web; git pull;
+   cd ~/kandji/company/kandji-backend-company-app; git pull;
+   pip install --upgrade pip; pip install -r requirements.txt;
+'
+
+alias company-web='
+   clear;
+   source ~/Envs/company/bin/activate;
+   cd ~/kandji/company/kandji-backend-company-app; git pull;
+   pip install --upgrade pip; pip install -r requirements.txt;
+   cd ~/kandji/company/kandji-web; git pull;
+'
+
+#########
+# Admin #
+#########
+
+#alias admin="source ~/Envs/admin/bin/activate; cd ~/kandji/admin/kandji-backend-auth-app; git pull;"
+alias admin='
+   clear;
+   source ~/Envs/admin/bin/activate;
+   cd ~/kandji/admin/kandji-web-admin; git pull;
+   cd ~/kandji/admin/kandji-backend-auth-app; git pull;
+   pip install --upgrade pip; pip install -r requirements.txt;
+'
+
+alias admin-web='
+   clear;
+   source ~/Envs/admin/bin/activate;
+   cd ~/kandji/admin/kandji-backend-auth-app; git pull;
+   pip install --upgrade pip; pip install -r requirements.txt;
+   cd ~/kandji/admin/kandji-web-admin; git pull;
+'
+
+###########
+# Partner #
+###########
+
+#alias partner="source ~/Envs/partner/bin/activate; cd ~/kandji/partner/kandji-backend-partner-app;"
+alias partner='
+   clear;
+   source ~/Envs/partner/bin/activate;
+   cd ~/kandji/partner/kandji-web-partner; git pull;
+   cd ~/kandji/partner/kandji-backend-partner-app; git pull;
+   pip install --upgrade pip; pip install -r requirements.txt;
+'
+
+alias partner-web='
+   clear;
+   source ~/Envs/partner/bin/activate;
+   cd ~/kandji/partner/kandji-backend-partner-app; git pull;
+   pip install --upgrade pip; pip install -r requirements.txt;
+   cd ~/kandji/partner/kandji-web-partner; git pull;
+'
